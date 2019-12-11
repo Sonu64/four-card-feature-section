@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:800&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Four card feature section</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: "Nunito Sans", "Product Sans", sans-serif;
+    }
+    body{
+      background: #E4E4E4;
+    }
+    #p-toppest{
+      font-size: 35px;
+    }
+    .container{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .top{
+      background: ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .top p{
+      text-align: center;
+      width: 50%;
+      margin-bottom: 40px;
+    }
+    .top h1{
+      margin-bottom: 20px;
+    }
+    .left{     
+      border-top: 5px solid #00B8B8;
+    }
+    .left, .middle, .right{
+      width: 30%;
+    }
+    .left, .middle-top, .middle-bottom, .right{
+      box-shadow: 1px 0px 10px 4px grey;
+      border-radius: 5px;
+      padding: 20px 0px 20px 20px;
+      background: white;
+    }
+    .left p, .middle-top p, .middle-bottom p, .right p,.left h1, .middle-top h1, .middle-bottom h1, .right h1{
+      padding-right: 20px;
+    }
+    .left p, .middle-top p, .middle-bottom p, .right p{
+      margin-top: 15px;
+    }
+    div img{
+      float: right;
+      margin-right: 20px;
+      margin-top: 30px;
+    }
+    .middle{
+      display: flex;
+      flex-direction: column;
+    }
+    .middle-top{
+      margin-bottom: 9%;
+      border-top: 5px solid #E52323;
+    }
+    .middle-bottom{
+      border-top: 5px solid #FF6B00;
+    }
+    .right{
+      border-top: 5px solid #165BFF;
+    }
+    @media only screen and (max-width: 850px)
+    {
+      .container{
+        flex-direction: column;
+      }
+      .left, .middle-top, .middle-bottom, .right{
+        width: 90%;
+      }
+      .middle{
+        width: 100%;
+        align-items: center;
+      }
+      .middle-top{
+        margin-bottom: 0px;
+      }
+      .left, .middle-top, .middle-bottom, .right{
+        margin-bottom: 40px;
+      }
+      .top p{
+        width: 90%;
+      }
+      .top h1{
+        font-size: 1.6rem;
+      }
+      #p-toppest{
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+<div class="top"> 
+  <p style="margin-bottom: 10px;margin-top: 50px;font-weight: thin;" id="p-toppest">Reliable, efficient delivery</p>
+  <h1 style="font-family: 'Catamaran', sans-serif">Powered by Technology</h1>
+
+  <p>Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful</p>
+</div>
+
+
+
+<div class="container">
+<div class="left">
+  <h1>Supervisor</h1>
+  <p>Monitors activity to identify project roadblocks</p>
+  <img src="images/icon-supervisor.svg"/>
+</div>
+
+
+<div class="middle">
+  <div class="middle-top">
+    <h1>Team Builder</h1>
+    <p>Scans our talent network to create the optimal team for your project</p>
+    <img src="images/icon-team-builder.svg"/>
+  </div>
+  <div class="middle-bottom">
+    <h1>Karma</h1>
+    <p>Regularly evaluates our talent to ensure quality</p>
+    <img src="images/icon-karma.svg"/>
+  </div>
+</div>
+
+<div class="right">
+  <h1>Calculator</h1>
+  <p>Uses data from past projects to provide better delivery estimates</p>
+  <img src="images/icon-calculator.svg"/>
+</div>
+</div>
+</body>
+</html>
